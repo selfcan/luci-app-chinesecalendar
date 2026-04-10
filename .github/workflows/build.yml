@@ -28,14 +28,15 @@ jobs:
 
       - name: Download SDK
         run: |
-          wget -q "https://downloads.openwrt.org/releases/23.05.5/targets/x86/64/openwrt-sdk-23.05.5-x86-64_gcc-12.3.0_musl.Linux-x86_64.tar.xz" -O sdk.tar.xz
+          wget -q "https://downloads.openwrt.org/releases/23.05.5/targets/x86/64/openwrt-sdk-23.05.5-x86-64_gcc-12.3.0_musl.Linux-x86_64.tar.xz" -O /tmp/sdk.tar.xz
+          cd /tmp
           tar xf sdk.tar.xz
           mv openwrt-sdk-* sdk
 
       - name: Build package
         run: |
-          cp -r "${{ github.workspace }}" "sdk/package/${{ env.PACKAGE_NAME }}"
-          cd sdk
+          cp -r "${{ github.workspace }}" "/tmp/sdk/package/${{ env.PACKAGE_NAME }}"
+          cd /tmp/sdk
           # Update feeds
           ./scripts/feeds update -a
           ./scripts/feeds install -a
@@ -46,7 +47,7 @@ jobs:
       - name: Collect IPK
         run: |
           mkdir -p output
-          find sdk/bin/ -name "${{ env.PACKAGE_NAME }}*.ipk" -exec cp {} output/ \;
+          find /tmp/sdk/bin/ -name "${{ env.PACKAGE_NAME }}*.ipk" -exec cp {} output/ \;
           ls -lh output/
 
       - name: Upload artifact
