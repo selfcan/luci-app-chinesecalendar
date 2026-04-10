@@ -14,11 +14,17 @@ msgstr "中国农历"
 msgid "Lunar"
 msgstr "农历"
 
+msgid "GanZhi"
+msgstr "干支"
+
+msgid "Zodiac"
+msgstr "生肖"
+
 msgid "Solar Term"
 msgstr "节气"
 
 msgid "Holiday"
-msgstr "假期"
+msgstr "节日"
 
 msgid "Suitable"
 msgstr "宜"

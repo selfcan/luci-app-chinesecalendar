@@ -49,9 +49,6 @@ define Package/$(PKG_NAME)/install
 
 	$(INSTALL_DIR) $(1)/usr/share/rpcd/acl.d/
 	$(INSTALL_DATA) $(PKG_BUILD_DIR)/root/usr/share/rpcd/acl.d/* $(1)/usr/share/rpcd/acl.d/
-
-	$(INSTALL_DIR) $(1)/usr/share/calendar/
-	$(INSTALL_DATA) $(PKG_BUILD_DIR)/root/usr/share/calendar/* $(1)/usr/share/calendar/
 endef
 
 

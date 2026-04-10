@@ -7,6 +7,12 @@ msgstr ""
 msgid "Lunar"
 msgstr ""
 
+msgid "GanZhi"
+msgstr ""
+
+msgid "Zodiac"
+msgstr ""
+
 msgid "Solar Term"
 msgstr ""
 
