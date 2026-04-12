@@ -31,3 +31,9 @@ wget https://github.com/debugdoctor/luci-app-chinesecalendar/releases/download/v
 
 opkg install luci-app-chinesecalendar_2.0.1_all.ipk
 ```
+
+Contributing / 参与贡献
+---
+If you have any suggestions for improvement or feedback, feel free to open an issue or submit a pull request. Contributions are welcome!
+
+如果你有任何改进建议或反馈，欢迎提交 issue 或 PR，期待你的参与！
