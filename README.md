@@ -27,7 +27,7 @@ Installtion notes / 安装
 ---
 
 ```bash
-wget https://github.com/debugdoctor/luci-app-chinesecalendar/releases/download/v1.1.0/luci-app-chinesecalendar_2.0.0_all.ipk
+wget https://github.com/debugdoctor/luci-app-chinesecalendar/releases/download/v2.0.1/luci-app-chinesecalendar_2.0.1_all.ipk
 
-opkg install luci-app-chinesecalendar_2.0.0_all.ipk
+opkg install luci-app-chinesecalendar_2.0.1_all.ipk
 ```

@@ -399,7 +399,7 @@ return baseclass.extend({
 	title: _('Chinese Calendar'),
 
 	load: function() {
-		return new Date();
+		return Promise.resolve(new Date());
 	},
 
 	render: function(date) {
